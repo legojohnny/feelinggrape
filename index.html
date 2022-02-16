@@ -2,9 +2,9 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>FeelingGrape</title>
+	<title>LAFONAT</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/index.css" type="text/css">
@@ -18,12 +18,12 @@
 	<script type="text/javascript">
 	window.onload = function(){
 
-		var elm_header = document.querySelector('header');
-		var btn_menu = document.querySelector('.btn_menu');
+		var elm_header = document.getElementsByTagName("header")[0];
+		var btn_menu = document.getElementById("btn_menu");
 
-		btn_menu.addEventListener('click', function(){
-			elm_header.classList.toggle('on'); 
-		});
+		btn_menu.onclick = function(){
+			elm_header.classList.toggle("on"); 
+		}
 
 }
 
@@ -33,405 +33,488 @@
 	
 <body>
 
+	<header>
+		<h1><a href="index.html"><span class="blind">LAFONAT logo</span></a></h1>
+		<div class="logo"><a href="index.html"><span class="blind">LAFONAT name</span></a></div>
+		<button id="btn_menu" class="btn_menu"><span class="blind">menu</span></button>
 
-	<header> 
-		<h1><a href="index.html"><span class="blind">FeelingGrape Logo</span></a></h1>
-		<button class="btn_menu"><span class="blind">menu</span></button>
-
-		<nav>
-			<div class="utility">
-				<div class="lang_wrap"><!--랭랩은 높이값을 옵션에 포함 안시켜서 줘야함-->
-					<div class="select_lang"><span class="select_value">English</span><button class="btn_expand"><span class="blind">country change</span></button>
-					</div>
-					<div class="option_wrap">
-						<ul class="clearfix">
-							<li><button><span>English</span></button></li><!--
-							--><li><button><span>日本語</span></button></li><!--
-							--><li><button><span>Français</span></button></li>
-						</ul>
-					</div>
-				</div>
-				<a id="btn_login" class="util_btns btn_login" href="#"><span class="blind">login</span></a>
-				<a id="btn_cart" class="util_btns btn_cart" href="#"><span class="blind">cart</span></a>
-			</div>
+		<nav class="clearfix">
 			<ul class="clearfix">
-				<li>
-					<button class="btn_sub"><span>OUR COLLECTION</span></button>
+				<li class="clearfix active">
+					<button class="btn_sub"><span>ABOUT US</span></button>
 					<ul>
-						<li><a href="#">WINE OF MONTH</a></li>
-						<li><a href="#">WINE COLLECTION</a></li>
-						<li><a href="#">WINE TOOLS</a></li>
+						<li class="active"><a href="#">Brand Story</a></li>
+						<li><a href="#">Location</a></li>
+						<li><a href="#">Social</a></li>
 					</ul>
-				</li><!--
-				--><li>
-					<button class="btn_sub"><span>PROMOTION</span></button>
+				</li><!------
+			---><li class="clearfix">
+					<button class="btn_sub"><span>ROOMS</span></button>
 					<ul>
-						<li><a href="#">WINE SET</a></li>
-						<li><a href="#">WINERY TOUR</a></li>
+						<li><a href="#">Single</a></li>
+						<li><a href="#">Twin</a></li>
+						<li><a href="#">Double</a></li>
+						<li><a href="#">Suite</a></li>
 					</ul>
-				</li><!--
-			--><li>
-					<button class="btn_sub"><span>MAGAZINE</span></button>
+				</li><!------
+			---><li class="clearfix">
+					<button class="btn_sub"><span>DINING</span></button>
 					<ul>
-						<li><a href="#">FEATURED WINE</a></li>
-						<li><a href="#">WINE NEWS</a></li>
-						<li><a href="#">WINE DICTIONARY</a></li>
+						<li><a href="#">Buffet</a></li>
+						<li><a href="#">Cafe</a></li>
+						<li><a href="#">Bar</a></li>
 					</ul>
-				</li><!--
-			--><li>
-					<button class="btn_sub"><span>INFORMATION</span></button>
+				</li><!------
+			---><li class="clearfix">
+					<button class="btn_sub"><span>ACTIVITIES</span></button>
 					<ul>
-						<li><a href="sub/notice.html" style="font-weight: bold">NOTICE</a></li>
-						<li><a href="#">CUSTOMER SERVICE</a></li>
-						<li><a href="#">BRAND STORY</a></li>
-						<li><a href="#">OFFLINE STORE</a></li>
+						<li><a href="#">Hiking</a></li>
+						<li><a href="#">Meditation</a></li>
+						<li><a href="#">Yoga</a></li>
+					</ul>
+				</li><!------
+			---><li class="clearfix">
+					<button class="btn_sub"><span>FACILITIES</span></button>
+					<ul>
+						<li><a href="#">Swimming Pool</a></li>
+						<li><a href="#">Fitness Room</a></li>
+						<li><a href="#">Spa</a></li>
+					</ul>
+				</li><!------
+			---><li class="clearfix">
+					<button class="btn_sub"><span>OFFERS</span></button>
+					<ul>
+						<li><a href="#">Packages</a></li>
+						<li><a href="#">Event</a></li>
+					</ul>
+				</li><!------
+			---><li class="clearfix">
+					<button class="btn_sub"><span>CONTACT</span></button>
+					<ul>
+						<li><a href="#">Notice</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact List</a></li>
+						<li><a href="#">Q & A</a></li>
 					</ul>
 				</li>
 			</ul>
+			<div class="utility">
+				<a href="#"><span class="blind">facebook</span></a><!----
+				--><a href="#"><span class="blind">instagram</span></a><!----
+				--><a href="#"><span class="blind">youtube</span></a>
+			</div>
 		</nav>
 	</header>
 
-
-
-<section class="visual">
-	<h2 class="blind">visual section</h2>
-	<div class="slides cur">
-		<div class="rel">
-			<picture>
-				<source srcset="images/img_index_visual_01_M.jpg" media="(max-width: 767px)">
-				<source srcset="images/img_index_visual_01_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-				<source srcset="images/img_index_visual_01_D.jpg" media="(min-width: 1025px)">
-				<img src="images/img_index_visual_01_D.jpg" alt="glass fair">
-			</picture>
-		<p class="title">WE BELIEVE THAT LIFE'S MORE<br>FUN WHEN WE'RE TOGETHER</p>
+	<section class="visual">
+		<h2 class="blind">visual section</h2>
+		<div class="slogans">
+			<p class="slogan_left">Back to nature</p>
+			<p class="slogan_right">make the future</p>
 		</div>
-	</div>
-	</div>
-	<div class="slides next">
-		<div class="rel">
-			<picture>
-				<source srcset="images/img_index_visual_02_M.jpg" media="(max-width: 767px)">
-				<source srcset="images/img_index_visual_02_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-				<source srcset="images/img_index_visual_02_D.jpg" media="(min-width: 1025px)">
-				<img src="images/img_index_visual_02_D.jpg" alt="rose wine and flowers">
-			</picture>
-		</div>
-		<p class="title">QUALITY WINES FOR<br>EVERYONE TO ENJOY</p>
-	</div>
-	<div class="slides pre">
-		<div class="rel">
-			<picture>
-				<source srcset="images/img_index_visual_03_M.jpg" media="(max-width: 767px)">
-				<source srcset="images/img_index_visual_03_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-				<source srcset="images/img_index_visual_03_D.jpg" media="(min-width: 1025px)">
-				<img src="images/img_index_visual_03_D.jpg" alt="red wine and a farm background">
-			</picture>
-		</div>
-		<p class="title">HOME IS WHERE<br>THE WINE IS</p>
-	</div>
-	<div class="pagination">
-		<button class="pages active"><span><span class="blind">slides01</span></span></button><!--
-		--><button class="pages"><span><span class="blind">slides02</span></span></button><!--
-		--><button class="pages"><span><span class="blind">slides03</span></span></button>
-	</div>
-</section>
+		<video autoplay="autoplay" muted="muted" loop="loop">
+			<source src="media/video/video_common_visual.mp4" type="video/mp4">
+			<source src="media/video/video_common_visual.webm" type="video/webm">
+			<source src="media/video/video_common_visual.ogv" type="video/ogg">
+			<object src="media/video/video_common_visual.swf" type="applicantion/x-shockwave-flash"></object>
+			이 브라우저는 HTML5를 지원하지 않습니다.
+		</video>
+		<span class="ico_scr"><span class="inner_bar"><span class="blind">scroll down</span></span></span>
+	</section>
 
 
-
-
-
-<section class="month">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">Featured 2021</p>
-		<h2>Wine Of The Month</h2>
-		<div class="content_wrap">
-			<div class="info_wrap clearfix">
-				<div class="info">
-					<p class="title">Feeling Valley Shiraz</p>
-					<p class="color _red">Red</p>
-					<p class="country _fra"><span>France</span></p>
-					<p class="price">Price: $80</p>
-					<p class="desc">Feeling Valley Shiraz is everything a great wine should be vibrant, smooth, rich and easy to drink</p>
-					<p class="flavour">Flavour : Rich and smooth, with juicy red berries and hints of vanilla and spice</p>
-					<button class="btn_common _M _BK"><span>Add to Cart</span></button>
-				</div>
-				<div class="info">
-					<p class="title">Feeling Zest Sangria</p>
-					<p class="color _red">Red</p>
-					<p class="country _spa"><span>Spain</span></p>
-					<p class="price">Price: $90</p>
-					<p class="desc">Inspired by the traditional drink of Spain, [Feeling Zest] Sangria combines premium red wine with a splash of sweet citrus for a party-starter in a bottle</p>
-					<p class="flavour">Flavour : Sweet and refreshing, bursting with citrus flavors including mandarin & orange with a hint of red fruits</p>
-					<button class="btn_common _M _BK"><span>Add to Cart</span></button>
-				</div>
-				<div class="info">
-					<p class="title">Feeling Cellars Chardonnay</p>
-					<p class="color _white">White</p>
-					<p class="country _ita"><span>Italy</span></p>
-					<p class="price">Price: $85</p>
-					<p class="desc">This [Feeling Cellars] Chardonnay is everything a great wine should be – vibrant, flavorsome, fresh and easy to drink</p>
-					<p class="flavour">Flavour : Rich and vibrant, with fresh peach and melon flavors and a hint of vanilla</p>
-					<button class="btn_common _M _BK"><span>Add to Cart</span></button>
-				</div>
+	<section class="promo">
+		<div class="bg">
+			<div class="bg_01">
+				<div class="dep_03"><img src="images/img_bg_01_3dep_01.png" alt="background flower image 01"/></div>
+				<div class="dep_02"><img src="images/img_bg_01_2dep_01.png" alt="background flower image 02"/></div>
+				<div class="dep_02"><img src="images/img_bg_01_2dep_02.png" alt="background flower image 03"/></div>
+				<div class="dep_01"><img src="images/img_bg_01_1dep_01.png" alt="background flower image 04"/></div>
 			</div>
-			<div class="img_wrap view_mask">
+			<div class="bg_02">
+				<div class="dep_03"><img src="images/img_bg_02_3dep_01.png" alt="background flower image 05"/></div>
+				<div class="dep_02"><img src="images/img_bg_02_2dep_01.png" alt="background flower image 06"/></div>
+				<div class="dep_02"><img src="images/img_bg_02_2dep_02.png" alt="background flower image 07"/></div>
+				<div class="dep_01"><img src="images/img_bg_02_1dep_01.png" alt="background flower image 08"/></div>
+			</div>
+		</div>
+
+		<div class="inner_wrap content_wrap clearfix">
+			<h2>What We Do</h2>
+			<hr class="short">
+			<p class="lead">LAFONAT HOTEL focus on eco-friendly accommodations and amenities, such as sourcing ingredients locally, using green energy and products, and reducing the energy usage on property.</p>
+			<div class="view_mask">
 				<ul class="clearfix">
-					<li><img src="images/img_index_month_01.jpg" alt="shiraz wine"></li>
-					<li><img src="images/img_index_month_02.jpg" alt="sangria wine"></li>
-					<li><img src="images/img_index_month_03.jpg" alt="chardonnay wine"></li>
+					<li>
+						<img src="images/icon_index_promo_01.png" alt="energy recycle"/>
+						<p class="title">Green Energy</p>
+						<p class="desc">We are using the solar panel system and harvesting the rain for energy-saving.</p>
+					</li>
+					<li>
+						<img src="images/icon_index_promo_02.png" alt="vegetables in the bowl"/>
+						<p class="title">Local Ingredients</p>
+						<p class="desc">We are strongly committed to using ingredients produced by organic farming.</p>
+					</li>
+					<li>
+						<img src="images/icon_index_promo_03.png" alt="amenity set including shampoo, lotion and soap"/>
+						<p class="title">Sustainable Products</p>
+						<p class="desc">We are producing the organic linens and amenities, safe cleaning products.</p>
+					</li>
 				</ul>
 			</div>
-			<div class="month_wrap">
-				<p class="month active">AUG</p>
-				<p class="month">SEP</p>
-				<p class="month">OCT</p>
-				<p class="year">2021</p>
+		</div>
+	</section>
+	
+	<section class="rooms">
+		<div class="bg">
+			<div class="bg_03">
+				<div class="dep_03"><img src="images/img_bg_03_3dep_01.png" alt="background flower image 09"/></div>
+				<div class="dep_02"><img src="images/img_bg_03_2dep_01.png" alt="background flower image 10"/></div>
+				<div class="dep_01"><img src="images/img_bg_03_1dep_01.png" alt="background flower image 11"/></div>
 			</div>
 		</div>
-		<div class="pagination">
-			<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button><!--
-		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+
+		<div class="inner_wrap">
+			<p class="title_h2_pre">STAY WITH US</p>
+			<h2>Our Rooms</h2>
+			<div class="content_wrap view_mask">
+				<div class="tabs_wrap">
+					<div class="rel">
+						<button><span>SINGLE</span></button><!---
+					---><button><span>TWIN</span></button><!--
+					---><button><span>DOUBLE</span></button><!--
+					---><button><span>SUITE</span></button>
+						<span class="bar"><span class="blind">bottom bar</span></span>
+					</div>
+				</div>
+				<ul class="lists_wrap change_wraps clearfix">
+					<li>
+						<a href="single.html"><img src="images/img_index_rooms_01.jpg" alt="clean room with single bed"/></a>
+						<div class="info">
+							<p class="title">SINGLE</p>
+							<p class="desc">The single room produce nice space for one person. Enjoy the view of forest.</p>
+							<a class="view_more" href="single.html"><span>VIEW MORE</span></a>
+						</div>
+					</li>
+					<li>
+						<a href="twin.html"><img src="images/img_index_rooms_02.jpg" alt="neat space room with two beds"/></a>
+						<div class="info">
+							<p class="title">TWIN</p>
+							<p class="desc">The twin room is good for couple and friends. Relax with cozy space.</p>
+							<a class="view_more" href="twin.html"><span>VIEW MORE</span></a>
+						</div>
+					</li>
+					<li>
+						<a href="double.html"><img src="images/img_index_rooms_03.jpg" alt="enough space room with double bed"/></a>
+						<div class="info">
+							<p class="title">DOUBLE</p>
+							<p class="desc">The double room is similar to the twin room with more space. Good for family.</p>
+							<a class="view_more" href="double.html"><span>VIEW MORE</span></a>
+						</div>
+					</li>
+					<li>
+						<a href="suite.html"><img src="images/img_index_rooms_04.jpg" alt="large space including terrace and king size bed"/></a>
+						<div class="info">
+							<p class="title">SUITE</p>
+							<p class="desc">The suite room has large space with terrace. Forest view will make you happy.</p>
+							<a class="view_more" href="suite.html"><span>VIEW MORE</span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-
-
-
-<section class="collection">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">Our Wines</p>
-		<h2>SHOP BY<br>COLLECTION</h2>
-		<div class="content_wrap">
-			<div class="tabs_wrap"> <!---묶어서 상단으로 보내는 역할만 함.-->
-				<div class="rel"> <!---border-bottom으로 하단의 선 만들어주는 역할, 바(absolute)가 움직이도록 relative 역할도 함.-->
-					<button><span>RED WINE</span></button><!-- 바깥쪽 넓이를 button이 만들고(25%), 안쪽의 모양을 span(넓이는 button과 동일 (25%))이 만듦.
-					--><button><span>ROSE WINE</span></button><!--inline-block 시 주석공백처리(float해도 되는데 div아니고 button 4개니까 굳이 float할 필요 없음)
-					--><button><span>WHITE WINE</span></button><!--
-					--><button><span>CHAMPAGNE</span></button>
-					<span class="bar"><span class="blind">bottom bar</span></span>
+	<section class="dining clearfix">
+		<div class="img_wrap">
+			<img src="images/img_index_dining.jpg" alt="people enjoying the dining with various cuisines."/>
+		</div>
+		<div class="info_wrap clearfix">
+			<div class="inner_wrap_half">
+				<div class="info">
+					<p class="title_h2_pre">FOOD WITH LOVE</p>
+					<h2>Our Dining</h2>
+					<p class="desc">We offers you a feast of different flavors every day, including fresh dishes cooked with local ingredients, various cuisines of the East and West, and dishes cooked on-the-spot by the chefs at the live station. Please enjoy a pleasant dining experience with us.</p>
+					<a class="view_more" href="dining.html"><span>VIEW MORE</span></a>
 				</div>
 			</div>
-			<ul class="lists_wrap change_wraps clearfix">
-				<li>
-					<picture>
-						<source srcset="images/img_collection_red_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_red_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_red_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_red_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">RED WINE</p>
-						<a class="btn_common _M _W" href="redwine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-				<li>
-					<picture>
-						<source srcset="images/img_collection_rose_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_rose_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_rose_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_rose_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">ROSE WINE</p>
-						<a class="btn_common _M _W" href="rosewine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-				<li>
-					<picture>
-						<source srcset="images/img_collection_white_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_white_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_white_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_white_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">WHITE WINE</p>
-						<a class="btn_common _M _W" href="whitewine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-				<li>
-					<picture>
-						<source srcset="images/img_collection_champ_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_champ_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_champ_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_champ_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">CHAMPAGNE</p>
-						<a class="btn_common _M _W" href="champwine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-			</ul>
 		</div>
-	</div>
-</section>
+	</section>
 
 
-
-<section class="slogan">
-	<h2 class="blind">slogan</h2>
-	<ul class="clearfix">
-		<li>
-			<img src="images/img_index_slogan_grape.png" alt="slogan one feeling great">
-			<p class="title">FEELING GREAT</p>
-			<p class="desc">We always try to say the joy and happiness that everyone can feel fairly through our wine.</p>
-		</li>
-		<li>
-			<img src="images/img_index_slogan_handcup.png" alt="slogan two reasonable select">
-			<p class="title">REASONABLE SELECT</p>
-			<p class="desc">Red, white, rose, champagne are flexible or systematic. With the variety of rational wines Surprise you. Choose the best one. It suits your taste.</p>
-		</li>
-		<li>
-			<img src="images/img_index_slogan_root.png" alt="slogan three making heritage">
-			<p class="title">MAKING HERITAGE</p>
-			<p class="desc">Branching, blooming, harvesting. Find the farmland of vineyards and wine breweries and feel the Heritage with us.</p>
-		</li>
-	</ul>
-</section>
-
-<!--이미지가 상단에 온 이유는 모바일 구성 때문임-->
-<section class="brand clearfix">
-	<h2 class="blind">Brand</h2>
-	<div class="img_wrap imgs_change_interval">
-		<img src="images/img_index_brand_01.jpg" alt="grape on hands">
-		<img src="images/img_index_brand_02.jpg" alt="barrel storage">
-		<img src="images/img_index_brand_03.jpg" alt="grape farm">
-	</div>
-	<div class="info_wrap clearfix">
-		<div class="inner_wrap_half">
-			<div class="info">
-				<p class="title_pre">FeelingGrape</p>
-				<p class="title">Our Legacy...</p>
-				<p class="desc">In the autumn of 1996, a truly prestigious pair the late Dr Choi of Korea and the late Baron Edmond of France came together to establish FeelingGrape with fulfilled a shared vision. A dream to create iconic Korea wines of exceptional quality, sealed with a promise to uphold an unwavering dedication to precision, and perfection.</p>
-				<a class="btn_common _M _BK" href="story.html"><span>Discover Our Story</span></a>
+	<section class="activities">
+		<div class="bg">
+			<div class="bg_04">
+				<div class="dep_03"><img src="images/img_bg_04_3dep_01.png" alt="background flower image 12"/></div>
+				<div class="dep_02"><img src="images/img_bg_04_2dep_01.png" alt="background flower image 13"/></div>
+				<div class="dep_01"><img src="images/img_bg_04_1dep_01.png" alt="background flower image 14"/></div>
 			</div>
 		</div>
-	</div>
-</section>
-
-
-<section class="tools">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">The Best</p>
-		<h2>Wine Tools</h2>
-		<a class="btn_common _M _BK" href="#"><span>Shop Now</span></a>
-	</div>
-	<div class="inner_wrap_02">
-		<div class="view_mask">
-			<ul>
-				<li>
-					<img src="images/img_index_tool_01.jpg" alt="">
-					<p class="title">Alpha Wine Decanter</p>
-					<p class="price">$150</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_02.jpg" alt="">
-					<p class="title">Anna Silver Opener</p>
-					<p class="price">$170</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_03.jpg" alt="">
-					<p class="title">Classic Ice Bucket</p>
-					<p class="price">$210</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_04.jpg" alt="">
-					<p class="title">Bohemian Glass Coupe Set</p>
-					<p class="price">$330</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_05.jpg" alt="">
-					<p class="title">Alessandro Silver Opener</p>
-					<p class="price">$175</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_06.jpg" alt="">
-					<p class="title">Barkcellar Wine Storage</p>
-					<p class="price">$240</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-			</ul>
+		<div class="inner_wrap">
+			<div class="info_wrap">
+				<p class="title_h2_pre">ENJOY THE MOMENTS</p>
+				<h2>Our Activities</h2>
+			</div>
+			<div class="view_mask content_wrap">
+				<ul class="clearfix">
+					<li>
+						<a href="activities.html#hiking">
+							<picture class="act_01">
+								<source srcset="images/img_index_activities_01_M.jpg" media="(max-width: 767px)">
+								<source srcset="images/img_index_activities_01.jpg" media="(min-width: 768px)">
+								<img src="images/img_index_activities_01.jpg" alt="woman hiking the mountain">
+							</picture>
+							<div class="info">
+								<p class="title">HIKING</p>
+								<p class="click">Click to Explore</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="activities.html#meditation">
+							<picture class="act_02">
+								<source srcset="images/img_index_activities_02_M.jpg" media="(max-width: 767px)">
+								<source srcset="images/img_index_activities_02.jpg" media="(min-width: 768px)">
+								<img src="images/img_index_activities_02.jpg" alt="woman using singing bowl for relax">
+							</picture>
+							<div class="info">
+								<p class="title">MEDITATION</p>
+								<p class="click">Click to Explore</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="activities.html#yoga">
+							<picture class="act_03">
+								<source srcset="images/img_index_activities_03_M.jpg" media="(max-width: 767px)">
+								<source srcset="images/img_index_activities_03.jpg" media="(min-width: 768px)">
+								<img src="images/img_index_activities_03.jpg" alt="woman practicing yoga position">
+							</picture>
+							<div class="info">
+								<p class="title">YOGA</p>
+								<p class="click">Click to Explore</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="pagination">
-			<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button><!--
-			--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+	</section>
+
+	<section class="facilities">
+		<div class="inner_wrap clearfix">
+			<div class="info">
+				<p class="title_h2_pre">TAKE CARE OF YOU</p>
+				<h2>Our Facilities</h2>
+				<p class="desc">We are using the natural energy for heating and electric system for the facilities. By the natural energy such as solar panels and harvesting the rain, hotel can save more energy. Enjoy your eco-friendly facilities for your wellness.</p>
+				<a class="view_more" href="facilities.html"><span>VIEW MORE</span></a>
+			</div>
+			<div class="img_wrap clearfix">
+				<img class="fac_01 slides cur" src="images/img_index_facilities_01.jpg" alt="man practicing deadlift" title="Fitness Room"/>
+				<img class="fac_02 slides next" src="images/img_index_facilities_02.jpg" alt="woman decorate spa bed" title="Spa"/>
+				<img class="fac_03 slides prev" src="images/img_index_facilities_03.jpg" alt="two swimming pool chairs prepared next pool" title="Swimming Pool"/>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-
-
-
-<section class="news">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">More Fun With</p>
-		<h2>Grape Magazine</h2>
-		<a class="btn_common _M _BK" href="news.html"><span>Learn More</span></a>
-		<div class="view_mask">
-			<ul>
-				<li><a href="news.html#news_01"><img src="images/img_index_news_01.jpg" alt="card news new selection"></a></li>
-				<li><a href="news.html#news_02"><img src="images/img_index_news_02.jpg" alt="card news winery tour event"></a></li>
-				<li><a href="news.html#news_03"><img src="images/img_index_news_03.jpg" alt="card news the perfect pai"></a></li>
-				<li><a href="news.html#news_04"><img src="images/img_index_news_04.jpg" alt="card news premimum wine"></a></li>
-				<li><a href="news.html#news_05"><img src="images/img_index_news_05.jpg" alt="card news choose wisely"></a></li>
-				<li><a href="news.html#news_06"><img src="images/img_index_news_06.jpg" alt="card news wine party"></a></li>
-			</ul>
+	<section class="event">
+		<div class="bg">
+			<div class="bg_05">
+				<div class="dep_03"><img src="images/img_bg_05_3dep_01.png" alt="background flower image 15"/></div>
+				<div class="dep_02"><img src="images/img_bg_05_2dep_01.png" alt="background flower image 16"/></div>
+				<div class="dep_01"><img src="images/img_bg_05_1dep_01.png" alt="background flower image 17"/></div>
+			</div>
 		</div>
-		<div class="pagination">
-			<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button><!--
-		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+		<div class="inner_wrap content_wrap">
+			<p class="title_h2_pre">SPECIAL OFFER FOR YOU</p>
+			<h2>Package & Event</h2>
+			<div class="view_mask">
+				<ul class="clearfix">
+					<li>
+						<a href="event.html#event_01">
+							<img src="images/img_index_event_01.jpg" alt="woman enjoying the snow"/>
+							<img class="ico_viewmore" src="images/icon_common_viewmore.png" alt="view more"/>
+						</a>
+						<div class="info">
+							<p class="title">WINTER HOLIDAY</p>
+							<p class="desc">Check out the various benefits offred by us during the winter.</p>
+							<a class="view_more" href="event.html#event_01">VIEW MORE</a>
+						</div>
+					</li>
+					<li>
+						<a href="event.html#event_02">
+							<img src="images/img_index_event_02.jpg" alt="picnic basket with wine and foods"/>
+							<img class="ico_viewmore" src="images/icon_common_viewmore.png" alt="view more"/>
+						</a>
+						<div class="info">
+							<p class="title">PICNIC PACKAGE</p>
+							<p class="desc">We offers pre packaged picnic set for your relaxing hotel stay.</p>
+							<a class="view_more" href="event.html#event_02">VIEW MORE</a>
+						</div>
+					</li>
+					<li>
+						<a href="event.html#event_03">
+							<img src="images/img_index_event_03.jpg" alt="hand holding the clear marble like water bubble under the blue sky and green trees"/>
+							<img class="ico_viewmore" src="images/icon_common_viewmore.png" alt="view more"/>
+						</a>
+						<div class="info">
+							<p class="title">MY GREEN MOMENTS</p>
+							<p class="desc">Enjoy our green amenities and share the green moments.</p>
+							<a class="view_more" href="event.html#event_03">VIEW MORE</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-
-
-
-
-
-
-
-<footer> 
-	<div class="inner_wrap clearfix">
-		<div class="logo_wrap"><img src="images/img_header_logo_D.png" alt="footer logo"></div>
-		<div class="info_wraps left_bdr">
-			<p class="title">FEELING GRAPE</p>
-			<ul>
-				<li><a href="distribution.html">DISTRIBUTORS</a></li>
-				<li><a href="term.html">TERMS & CONDITIONS</a></li>
-				<li><a href="policy.html">PRIVACY POLICY</a></li>
-			</ul>
+ 	<section class="social">
+		<div class="bg">
+			<div class="bg_06">
+				<div class="dep_02"><img src="images/img_bg_06_2dep_01.png" alt="background flower image 18"/></div>
+				<div class="dep_01"><img src="images/img_bg_06_1dep_01.png" alt="background flower image 19"/></div>
+			</div>
+			<div class="bg_07">
+				<div class="dep_02"><img src="images/img_bg_07_2dep_01.png" alt="background flower image 20"/></div>
+				<div class="dep_01"><img src="images/img_bg_07_1dep_01.png" alt="background flower image 21"/></div>
+			</div>
 		</div>
-		<div class="info_wraps center_bdr">
-			<p class="title">CUSTOMER CARE</p>
-			<ul>
-				<li><span>Email</span><a href="mailto:customercare@feelinggrape.com">customercare@feelinggrape.com</a></li>
-				<li><span>Phone</span><a href="tel:010-1234-5678">+82 10 1234 5678</a></li>
-			</ul>
-		</div>
-		<div class="info_wraps right_bdr">
-			<p class="title">SIGN UP TO OUR NEWSLETTER</p>
-			<ul>
-				<li>
-					<span>Keep in touch</span>
-					<form class="form_mail" action="mail.jsp" method="post">
-						<label for="enter_email" class="blind">enter_email</label>
-						<input type="email" id="enter_email" placeholder="Enter your email" required>
-						<input type="submit" class="btn_search" value="Submit">
-					</form>
-				</li>
-			</ul>
-		</div>
-		<p class="copy"><strong>ⓒ2021 FeelingGrape Corporate</strong></p>
-	</div>
-</footer>
 
+		<div class="inner_wrap content_wrap">
+			<p class="pre_title">SHARE YOUR MOMENT</p>
+			<h2>#LAFONAT</h2>
+			<div class="view_mask">
+				<ul>
+					<li>
+						<a href="social.html#sns_01">
+							<img class="sns_bg" src="images/img_index_sns_01.jpg" alt="woman swimming in the pool"/>
+							<img class="ico_sns" src="images/icon_index_sns_01.png" alt="facebook icon"/>
+							<div class="info">
+								<img class="profile" src="images/img_index_sns_profile_01.jpg" alt="woman swimming in the pool"/>
+								<p class="user">@ellora.lala</p>
+								<p class="comment">Back in my happy place!</p>
+								<p class="hashs">#LAFONAT #greenlife #enjoy</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="social.html#sns_02">
+							<img class="sns_bg"  src="images/img_index_sns_02.jpg" alt="woman watching the view"/>
+							<img class="ico_sns" src="images/icon_index_sns_02.png" alt="instagram icon"/>
+							<div class="info">
+								<img class="profile" src="images/img_index_sns_profile_02.jpg" alt="man sitting on the couch"/>
+								<p class="user">@laura.ham</p>
+								<p class="comment">Such a special day!</p>
+								<p class="hashs">#weekend #LAFONAT #cozy</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="social.html#sns_03">
+							<img class="sns_bg"  src="images/img_index_sns_03.jpg" alt="people swimming in the pool"/>
+							<img class="ico_sns" src="images/icon_index_sns_03.png" alt="twitter icon"/>
+							<div class="info">
+								<img class="profile" src="images/img_index_sns_profile_03.jpg" alt="woman resting on the bed"/>
+								<p class="user">@amber_jung</p>
+								<p class="comment">I can’t wait to go again!</p>
+								<p class="hashs">#LAFONAT #friends #fun</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="social.html#sns_04">
+							<img class="sns_bg"  src="images/img_index_sns_04.jpg" alt="man in the lounge"/>
+							<img class="ico_sns" src="images/icon_index_sns_02.png" alt="instagram icon"/>
+							<div class="info">
+								<img class="profile" src="images/img_index_sns_profile_04.jpg" alt="man talking with friend"/>
+								<p class="user">@nortonmedlim</p>
+								<p class="comment">BEAUTIFUL PLACE!</p>
+								<p class="hashs">#Enjoy #beautiful #clean</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="social.html#sns_05">
+							<img class="sns_bg" src="images/img_index_sns_05.jpg" alt="man eating on the bed"/>
+							<img class="ico_sns" src="images/icon_index_sns_01.png" alt="facebook icon"/>
+							<div class="info">
+								<img class="profile" src="images/img_index_sns_profile_05.jpg" alt="drinks with food"/>
+								<p class="user">@jason_d_risner</p>
+								<p class="comment">Ready to be there again!</p>
+								<p class="hashs">#LAFONAT #revisit #happy</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="social.html#sns_06">
+							<img class="sns_bg" src="images/img_index_sns_06.jpg" alt="woman laying down on swimming pool chair"/>
+							<img class="ico_sns" src="images/icon_index_sns_03.png" alt="twitter icon"/>
+							<div class="info">
+								<img class="profile" src="images/img_index_sns_profile_06.jpg" alt="man looking far away"/>
+								<p class="user">@hey_beloved</p>
+								<p class="comment">Lovely place and location!</ p>
+								<p class="hashs">#LAFONAT #great #view</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="pagination">
+				<button class="dir_btns prev" title="prev button"><span>PREV</span></button><!--
+				--><button class="dir_btns next" title="next button"><span>NEXT</span></button>
+			</div>
+		</div>
+	</section>
+
+	<hr class="long">
+
+
+
+
+ 	<footer>
+		<div class="logo_wrap"><img src="images/img_logo_03.png" alt="footer logo"></div>
+		<div class="inner_wrap clearfix">
+			<div class="info_wraps">
+				<p class="title">LOCATION</p>
+				<ul>
+					<li><a href="address.html">LAFONAT HOTEL<br>114, Eulji-ro, Jung-gu, Seoul,<br>Republic of Korea</a></li>
+				</ul>
+			</div>
+			<div class="info_wraps">
+				<p class="title">INFO</p>
+				<ul>
+					<li><span>Business registration number: 189-85-00123</span></p></li>
+					<li><span>Name of representative: Pengsu Lee</span></p></li>
+				</ul>
+			</div>
+			<div class="info_wraps">
+				<p class="title">CALL US</p>
+				<ul>
+					<li><span>TEL:</span><a href="0256781234"> +82-2-5678-1234</a></li>
+					<li><span>FAX:</span><a href="0256781334"> +82-2-5678-1334</a></li>
+				</ul>
+			</div>
+			<div class="info_wraps">
+				<p class="title">CONTACT</p>
+				<ul>
+					<li><span>Email:</span><a href="mailto:info@lafonathotel.com"> info@lafonathotel.com</a></li>
+				</ul>
+			</div>
+			<div class="utility">
+				<a href="#"><span class="blind">facebook</span></a><!----
+				--><a href="#"><span class="blind">instagram</span></a><!----
+				--><a href="#"><span class="blind">youtube</span></a>
+			</div>
+		</div>
+		<div class="copy_wrap">
+			<p class="copy">Copyright © 2021 LAFONAT HOTEL. All Rights Reserved.</p>
+			<div class="policy">
+				<a class="privacy" href="policy.html">Privacy Policy</a>
+				<a class="cookie" href="cookie.html">Cookie Policy</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
