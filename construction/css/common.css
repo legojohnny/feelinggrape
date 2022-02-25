@@ -220,6 +220,8 @@ section.construction div.info_wrap > p.desc { margin-bottom: 2em; color: #444; f
 	header div.utility div.option_wrap li:nth-child(1) button { background: url("../images/img_common_flag_usa.png") no-repeat; background-size: 100%; }
 	header div.utility div.option_wrap li:nth-child(2) button { background: url("../images/img_common_flag_japan.png") no-repeat; background-size: 100%; }
 	header div.utility div.option_wrap li:nth-child(3) button { background: url("../images/img_common_flag_france.png") no-repeat; background-size: 100%; }
+	header div.utility div.option_wrap li:nth-child(4) button { background: url("../images/img_common_flag_japan.png") no-repeat; background-size: 100%; }
+	header div.utility div.option_wrap li:nth-child(5) button { background: url("../images/img_common_flag_france.png") no-repeat; background-size: 100%; }
 	header div.utility div.option_wrap button > span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
 
 	header div.utility .util_btns { display: inline-block; width: 26px; height: 26px; margin-left: 15px; vertical-align: middle; }
